@@ -1,0 +1,7 @@
+<div id="cards">
+  <mat-card-content *ngFor="let product of products" >
+   <img [src]="product.image" alt="imagen_no_encontrada">
+   <h3>{{product.title}}</h3>
+   <p> Precio : {{product.price}} euros</p>
+  </mat-card-content>
+</div>

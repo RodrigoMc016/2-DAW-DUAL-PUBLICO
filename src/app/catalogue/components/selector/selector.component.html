@@ -1,0 +1,19 @@
+
+<mat-form-field>
+  <mat-label>Selecciona una categoría</mat-label>
+  <mat-select (selectionChange)="filterProducts($event.value)">
+    <mat-option *ngFor="let item of categories" [value]="item">{{item}}</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<div *ngIf="isFiltered"> <!--Si esta variable se pone a true hace lo siguiente-->
+  <div id="cards2" *ngFor="let product of filteredProducts"> <!-- itera un componente exacto al cards normal teniendo en cuenta los datos de la interfaz-->
+    <mat-card-content>
+     <img [src]="product.image" alt="imagen_no_encontrada"> <!--Acceso a los datos de la interfaz-->
+     <h3>{{product.title}}</h3>
+     <p> Precio : {{product.price}} euros</p>
+    </mat-card-content>
+  </div>
+</div>
+
+

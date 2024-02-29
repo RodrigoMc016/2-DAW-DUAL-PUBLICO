@@ -1,0 +1,50 @@
+#cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:0 auto;
+  gap:5%;
+  width: 70%;
+
+
+}
+mat-card-content{
+  border:1px solid black;
+  padding: 2.5%;
+
+  text-align: center;
+  box-shadow:1px 1px;
+
+}
+mat-card-content h3, p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+  margin-top:12.5%;
+
+  width: 40%;
+  height: 40%;
+}
+
+
+@media(max-width: 1000px){
+
+  #cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media(max-width:650px){
+  #cards{
+    display: grid;
+    gap:0%;
+    grid-template-columns: 1fr;
+  }
+  img{
+    margin-top:0%;
+  }
+
+}
+
+

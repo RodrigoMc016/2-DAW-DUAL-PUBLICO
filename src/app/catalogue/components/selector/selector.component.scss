@@ -1,0 +1,47 @@
+mat-form-field{
+
+  height: 100px;
+  mat-select{
+
+    mat-option{
+
+      margin-bottom:20%;
+    }
+  }
+
+
+}
+#cards2{
+  margin-top:40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:0 auto;
+  gap:5%;
+  width: 70%;
+
+}
+mat-card-content{
+  border:1px solid black;
+  padding: 2.5%;
+  margin:2.5%;
+  text-align: center;
+  box-shadow:1px 1px;
+  width: 40%;
+}
+mat-card-content h3, p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+  margin-top:12.5%;
+  width: 40%;
+
+
+}
+
+
+@media (max-width:600px){
+  mat-card-content h3{
+    display: none;
+  }
+}
